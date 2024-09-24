@@ -35,7 +35,18 @@ def run_left():
     pass
 
 
+def run_left_tri():
+    print('left')
+    pass
+def run_right_tri():
+    print('right')
+    pass
+def run_bottom_tri():
+    print('bottom')
+    pass
 
+
+#사각형 모양 함수 정의
 def run_rectangle():
     run_top()
     run_right()
@@ -44,6 +55,7 @@ def run_rectangle():
     
     pass
 
+#원 모양 함수 정의
 def run_circle():
     print('circle')
 
@@ -58,14 +70,16 @@ def run_circle():
         draw_boy(x,y)
     pass
 
-
-
-    
+def run_triangle():
+    run_left_tri()
+    run_right_tri()
+    run_bottom_tri()
 
 
 while(True): #사각형 운동과 원 운동
     #run_circle()
-    run_rectangle()
+    #run_rectangle()
+    run_triangle()
     break
     
     
