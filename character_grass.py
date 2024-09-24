@@ -1,22 +1,39 @@
 from pico2d import *
-
-def run_rectagle():
-    pass
-
-def run_circle():
-    pass
+import math
 
 open_canvas()
+
+#fill here
 
 grass=load_image('grass.png')
 boy=load_image('character.png')
 
-#코딩에 있어서 첫번째로 생각해야 할 것. 나무를 보지 말고 숲을 봐야 한다.
-#사각형 운동과 원 운동 무한루프
+def run_rectangle():
+    print('rectangle')
+    
+    pass
+
+def run_circle():
+    print('circle')
+
+    r=300
+    cx=800 //2
+    cy=600 //2
+
+    for d in range(0,360):
+        x=r*math.cos(math.radians(d)) + cx
+        y=r*math.sin(math.radians(d)) + cy
+        
+        clear_canvas_now()
+        boy.draw_now(x,y)
+        delay(0.01)
+    pass
+
 
 while(True): #사각형 운동과 원 운동
-    run_rectangle()
     run_circle()
+    run_rectangle()
+    break
     
     
 
