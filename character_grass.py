@@ -1,5 +1,11 @@
 from pico2d import *
 
+def run_rectagle():
+    pass
+
+def run_circle():
+    pass
+
 open_canvas()
 
 grass=load_image('grass.png')
