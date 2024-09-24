@@ -3,8 +3,6 @@ import math
 
 open_canvas()
 
-#fill here
-
 grass=load_image('grass.png')
 boy=load_image('character.png')
 
