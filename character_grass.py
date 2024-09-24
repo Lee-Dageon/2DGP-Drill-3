@@ -12,5 +12,6 @@ while(True): #사각형 운동과 원 운동
     run_rectangle()
     run_circle()
     
+    
 
 close_canvas()
