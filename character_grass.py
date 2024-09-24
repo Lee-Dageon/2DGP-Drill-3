@@ -13,26 +13,30 @@ def draw_boy(x,y):
     boy.draw_now(x,y)
     delay(0.01)
 
+
 def run_top():
-    print('TOP')
-    for x in range(0,800,10):
+    for x in range(0,750,10):
         draw_boy(x,550)
     pass
 
 def run_right():
-    print('RIGHT')
+    for y in range(550,0,-10):
+        draw_boy(750,y)
     pass
 
 def run_bottom():
-    print('BOTTOM')
+    for x in range(750,0,-10):
+        draw_boy(x,50)
     pass
 
 def run_left():
-    print('LEFT')
+    for y in range(50,550,10):
+        draw_boy(20,y)
     pass
 
+
+
 def run_rectangle():
-    print('rectangle')
     run_top()
     run_right()
     run_bottom()
@@ -55,8 +59,12 @@ def run_circle():
     pass
 
 
+
+    
+
+
 while(True): #사각형 운동과 원 운동
-    run_circle()
+    #run_circle()
     run_rectangle()
     break
     
